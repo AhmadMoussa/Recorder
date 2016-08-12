@@ -14,6 +14,8 @@
 		1C0BAC9F1D5CFC1B00F46BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0BAC9D1D5CFC1B00F46BB0 /* LaunchScreen.storyboard */; };
 		1C0BACAA1D5CFC1B00F46BB0 /* RecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0BACA91D5CFC1B00F46BB0 /* RecorderTests.swift */; };
 		1C0BACB51D5CFC1C00F46BB0 /* RecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0BACB41D5CFC1C00F46BB0 /* RecorderUITests.swift */; };
+		1C0BACC81D5D03EF00F46BB0 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0BACC71D5D03EF00F46BB0 /* Recording.swift */; };
+		1C0BACD11D5D0D5500F46BB0 /* RecordingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0BACD01D5D0D5500F46BB0 /* RecordingHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1C0BACB01D5CFC1C00F46BB0 /* RecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0BACB41D5CFC1C00F46BB0 /* RecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderUITests.swift; sourceTree = "<group>"; };
 		1C0BACB61D5CFC1C00F46BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0BACC71D5D03EF00F46BB0 /* Recording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		1C0BACD01D5D0D5500F46BB0 /* RecordingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		1C0BAC931D5CFC1B00F46BB0 /* Recorder */ = {
 			isa = PBXGroup;
 			children = (
+				1C0BACCD1D5D0D1100F46BB0 /* Helpers */,
+				1C0BACC41D5D03C400F46BB0 /* Entities */,
 				1C0BAC941D5CFC1B00F46BB0 /* AppDelegate.swift */,
 				1C0BAC961D5CFC1B00F46BB0 /* ViewController.swift */,
 				1C0BAC981D5CFC1B00F46BB0 /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				1C0BACB61D5CFC1C00F46BB0 /* Info.plist */,
 			);
 			path = RecorderUITests;
+			sourceTree = "<group>";
+		};
+		1C0BACC41D5D03C400F46BB0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1C0BACC71D5D03EF00F46BB0 /* Recording.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1C0BACCD1D5D0D1100F46BB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1C0BACD01D5D0D5500F46BB0 /* RecordingHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0BAC971D5CFC1B00F46BB0 /* ViewController.swift in Sources */,
+				1C0BACD11D5D0D5500F46BB0 /* RecordingHelper.swift in Sources */,
+				1C0BACC81D5D03EF00F46BB0 /* Recording.swift in Sources */,
 				1C0BAC951D5CFC1B00F46BB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
